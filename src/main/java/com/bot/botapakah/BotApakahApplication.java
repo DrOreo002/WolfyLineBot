@@ -1,7 +1,7 @@
 package com.bot.botapakah;
 
 import com.bot.botapakah.command.EnableDebugCommand;
-import com.bot.botapakah.command.TestCommand;
+import com.bot.botapakah.command.HelpCommand;
 import com.bot.botapakah.command.util.CommandExecutor;
 import com.bot.botapakah.command.util.CommandManager;
 import com.linecorp.bot.client.LineMessagingClient;
@@ -17,7 +17,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
-import java.util.Random;
 import java.util.concurrent.ExecutionException;
 
 @SpringBootApplication
@@ -36,7 +35,7 @@ public class BotApakahApplication extends SpringBootServletInitializer {
         // Register utils
         SpringApplication.run(BotApakahApplication.class, args);
         // Register commands
-        CommandManager.addCommand("test", new TestCommand());
+        CommandManager.addCommand("test", new HelpCommand());
         CommandManager.addCommand("debug", new EnableDebugCommand());
     }
 

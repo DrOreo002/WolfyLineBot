@@ -51,6 +51,19 @@ public class BotApakahApplication extends SpringBootServletInitializer {
                 CommandExecutor exe = CommandManager.getCommands().get(command.toLowerCase());
                 exe.onCommand(messageEvent.getReplyToken(), lineMessagingClient);
             }
+        } else {
+            sendMessage("Command tidak diketahui!", messageEvent.getReplyToken(), lineMessagingClient);
+        }
+    }
+
+    private void sendMessage(String message, String replyToken, LineMessagingClient lineMessagingClient){
+        TextMessage jawabanDalamBentukTextMessage = new TextMessage(message);
+        try {
+            lineMessagingClient
+                    .replyMessage(new ReplyMessage(replyToken, jawabanDalamBentukTextMessage))
+                    .get();
+        } catch (InterruptedException | ExecutionException e) {
+            System.out.println("Ada error saat ingin membalas chat");
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.bot.botapakah;
 
+import com.bot.botapakah.command.EnableDebugCommand;
 import com.bot.botapakah.command.TestCommand;
 import com.bot.botapakah.command.util.CommandExecutor;
 import com.bot.botapakah.command.util.CommandManager;
@@ -36,6 +37,7 @@ public class BotApakahApplication extends SpringBootServletInitializer {
         SpringApplication.run(BotApakahApplication.class, args);
         // Register commands
         CommandManager.addCommand("test", new TestCommand());
+        CommandManager.addCommand("debug", new EnableDebugCommand());
     }
 
     @EventMapping

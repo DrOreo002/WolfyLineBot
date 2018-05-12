@@ -24,20 +24,13 @@ public class BotDebug {
         return instance;
     }
 
-    public void sendLog(String message, String replyToken, LineMessagingClient lineMessagingClient) {
-        if (enabled) {
-            sendMessage(message, replyToken, lineMessagingClient);
-        }
+    public boolean isEnabled() {
+        return enabled;
     }
 
-    private void sendMessage(String message, String replyToken, LineMessagingClient lineMessagingClient){
-        TextMessage jawabanDalamBentukTextMessage = new TextMessage(message);
-        try {
-            lineMessagingClient
-                    .replyMessage(new ReplyMessage(replyToken, jawabanDalamBentukTextMessage))
-                    .get();
-        } catch (InterruptedException | ExecutionException e) {
-            System.out.println("Ada error saat ingin membalas chat");
+    public void sendLog(String message, String replyToken, LineMessagingClient lineMessagingClient) {
+        if (enabled) {
+            Sender.sendMessage(message, replyToken, lineMessagingClient);
         }
     }
 

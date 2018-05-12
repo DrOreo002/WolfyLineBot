@@ -23,7 +23,6 @@ import java.util.concurrent.ExecutionException;
 @LineMessageHandler
 public class BotApakahApplication extends SpringBootServletInitializer {
 
-
     @Autowired
     private LineMessagingClient lineMessagingClient;
 
@@ -46,7 +45,7 @@ public class BotApakahApplication extends SpringBootServletInitializer {
         // Commands
         if(pesanSplit[0].charAt(0) == '/'){
             // Handle command
-            String command = pesanSplit[0].toLowerCase();
+            String command = pesanSplit[0].substring(1).toLowerCase();
             if (CommandManager.getCommands().containsKey(command)) {
                 CommandExecutor exe = CommandManager.getCommands().get(command.toLowerCase());
                 exe.onCommand(messageEvent.getReplyToken(), lineMessagingClient);

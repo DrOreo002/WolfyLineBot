@@ -35,7 +35,7 @@ public class BotApakahApplication extends SpringBootServletInitializer {
         // Register utils
         SpringApplication.run(BotApakahApplication.class, args);
         // Register commands
-        CommandManager.addCommand("test", new HelpCommand());
+        CommandManager.addCommand("help", new HelpCommand());
         CommandManager.addCommand("debug", new EnableDebugCommand());
     }
 

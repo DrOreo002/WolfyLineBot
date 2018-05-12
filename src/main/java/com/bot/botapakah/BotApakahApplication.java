@@ -50,9 +50,11 @@ public class BotApakahApplication extends SpringBootServletInitializer {
             if (CommandManager.getCommands().containsKey(command)) {
                 CommandExecutor exe = CommandManager.getCommands().get(command.toLowerCase());
                 exe.onCommand(messageEvent.getReplyToken(), lineMessagingClient);
+            } else {
+                sendMessage("Command tidak diketahui!", messageEvent.getReplyToken(), lineMessagingClient);
             }
         } else {
-            sendMessage("Command tidak diketahui!", messageEvent.getReplyToken(), lineMessagingClient);
+            sendMessage("Gunakan / untuk berinteraksi dengan saya!", messageEvent.getReplyToken(), lineMessagingClient);
         }
     }
 

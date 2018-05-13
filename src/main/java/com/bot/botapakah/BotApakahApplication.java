@@ -1,5 +1,6 @@
 package com.bot.botapakah;
 
+import com.bot.botapakah.command.AboutCommand;
 import com.bot.botapakah.command.EnableDebugCommand;
 import com.bot.botapakah.command.HelpCommand;
 import com.bot.botapakah.command.util.CommandExecutor;
@@ -37,7 +38,7 @@ public class BotApakahApplication extends SpringBootServletInitializer {
         // Register commands
         CommandManager.addCommand("help", new HelpCommand());
         CommandManager.addCommand("debug", new EnableDebugCommand());
-        CommandManager.addCommand("about", new HelpCommand());
+        CommandManager.addCommand("about", new AboutCommand());
     }
 
 

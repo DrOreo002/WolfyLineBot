@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29988224-54ce-4026-a044-c77376304969" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bot/botapakah/command/AboutCommand.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bot/botapakah/BotApakahApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/bot/botapakah/BotApakahApplication.java" />
     </list>
@@ -26,8 +25,8 @@
       <file leaf-file-name="BotApakahApplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/botapakah/BotApakahApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-71">
-              <caret line="39" column="60" lean-forward="false" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+            <state relative-caret-position="199">
+              <caret line="40" column="61" lean-forward="false" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -723,7 +722,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526105692534</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added more command, and code fix">
+      <created>1526215951624</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1526215951624</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -765,7 +771,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Another one" />
     <MESSAGE value="Hello World" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hello World" />
+    <MESSAGE value="Added more command, and code fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more command, and code fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -910,8 +917,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bot/botapakah/BotApakahApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="39" column="60" lean-forward="false" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+        <state relative-caret-position="199">
+          <caret line="40" column="61" lean-forward="false" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

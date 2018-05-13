@@ -37,7 +37,9 @@ public class BotApakahApplication extends SpringBootServletInitializer {
         // Register commands
         CommandManager.addCommand("help", new HelpCommand());
         CommandManager.addCommand("debug", new EnableDebugCommand());
+        CommandManager.addCommand("about", new HelpCommand());
     }
+
 
     @EventMapping
     public void handleTextEvent(MessageEvent<TextMessageContent> messageEvent){

@@ -8,6 +8,6 @@ public class AboutCommand implements CommandExecutor {
 
     @Override
     public void onCommand(String replyToken, LineMessagingClient client) {
-        Sender.sendMessage("Bot dibuat oleh : @DrOreo002 a.k.a Anom Suryadinata \n Version : 1.0 - BETA",replyToken, client);
+        Sender.sendMessage("Bot dibuat oleh : @DrOreo002 a.k.a Anom Suryadinata \nVersion : 1.0 - BETA",replyToken, client);
     }
 }
